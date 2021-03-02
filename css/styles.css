@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    
+}
+body, html{
+    font-size: 10px;
+}
+
+h1{
+    padding-top: 20px;
+    font-size: 250%;
+    text-align: center;
+}
+h2{
+    margin: 5px 0;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2%;
+}
+.top-img, .bottom-img{
+    height: 250px;
+    width: 300px;
+    display: inline-block;
+    border-radius: 1000px;
+    float:left;
+    margin: 0 3%;
+   
+}
+.last-h2{
+    width:80%;
+    margin: 0 auto;
+    line-height: 3.5rem;
+    font-size: 3rem;
+   
+}
+
+.section-one{
+    width:60%;
+    margin: 0 auto;
+    padding: 0 10%;
+    font-size: 200%;
+    line-height: 2.5rem;
+}
+.section-two{
+    font-size: 200%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 0 20px;
+    margin-top: 0;
+}
+
+.section2-h2{
+    clear:both;
+}
+
+.flex-item{
+    margin: 0 15px;
+    padding: 10px 5px;
+    word-spacing: 3px;
+    width: 33%;
+    height: 270px;
+    overflow: auto;
+}
+
+.section-three{
+    font-size: 200%;
+    width:70%;
+    margin: 0 auto;
+    padding: 0 10%;
+    line-height: 3rem;
+
+}
+
+.section-four{
+    font-size: 200%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 25px;
+}
+
+.flex-item2{
+    margin: 0 20px;
+    padding: 10px;
+    word-spacing: 4px;
+    width: 35%;
+}
+
+.Author{
+    font-size: 200%;
+    margin-top: 0;
+}
+.bottom-img{
+    display: none;
+}
+
+.Author p{
+    clear: both;
+}
+
+
+@media screen and (max-width: 1000px){
+    .section-two, .section-four{
+        flex-direction:column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .flex-item, .flex-item2{
+        margin: 0;
+        word-spacing: 4px;
+        width: 100%;
+        padding: 20px 5px;
+    }
+
+    .section-one, .section-three{
+        width:100%;
+        padding:0 6%;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+    .flex-item{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:767px){
+    .flex-item{
+        height: auto;
+        margin: 0;
+        padding: 10px 0; 
+    }
+
+    .section-one{
+        width:90%;
+        margin: 0 auto;
+        padding: 0 5%;
+        font-size: 200%;
+        clear: both;
+    }
+    .top-img{
+        display:none;
+    }
+    h1{
+        line-height: 3.5rem;
+    }
+
+    .section-three{
+        width:100;
+        padding: 0 5%;
+    }
+    .bottom-img{
+        display: block;
+    }
+
+    .Author p{
+        margin-left: 50px;
+        padding-top: 20px;
+    }
+}
+
+
